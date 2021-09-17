@@ -1,4 +1,4 @@
-# MASTERHACKS docker container
+# Project docker containers
 
 ## Setup
 0. Make sure you have [docker engine](https://www.docker.com/) with [docker-compose](https://docs.docker.com/compose/install/) installed and daemon running
@@ -7,9 +7,9 @@
 
 ### Run project
 1. Run docker containers: `docker-compose up` (background: `-d`)
-2. Init project (fornt-end & back-end): `docker exec -it masterhacks-code /bin/sh -c "echo 'yes' | ./init.sh"`
+2. Init project (fornt-end & back-end): `docker exec -it {PROJECT_NAME}-code /bin/sh -c "echo 'yes' | ./init.sh"`
 
 ### more
-* Terminal for composer or/and npm stuff: `docker exec -it masterhacks-code sh`
-* PhpMyAdmin `http://masterhacks-phpmyadmin.localhost`
-* Connect to redis via cli `redis-cli -h masterhacks-redis.localhost`
+* Terminal for composer or/and npm stuff: `docker exec -it {PROJECT_NAME}-code sh`
+* PhpMyAdmin `http://{PROJECT_NAME}-phpmyadmin.localhost`
+* Connect to redis via cli `redis-cli -h {PROJECT_NAME}-redis.localhost`
