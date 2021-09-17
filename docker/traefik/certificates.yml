@@ -1,0 +1,9 @@
+serversTransport:
+   insecureSkipVerify: true
+
+tls:
+   stores:
+      default:
+         defaultCertificate:
+            certfile: /etc/traefik/certs/ssl.crt
+            keyfile: /etc/traefik/certs/ssl.key
