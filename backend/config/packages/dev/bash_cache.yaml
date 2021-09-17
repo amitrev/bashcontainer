@@ -1,0 +1,14 @@
+bash_cache:
+  clients:
+    main:
+      $options:
+        prefix: masterhacks
+        expires:
+          short: 60
+          medium: 600
+          long: 3600
+      $parameters:
+        dsn: redis
+        port: 6379
+        database: 0
+        timeout: 3

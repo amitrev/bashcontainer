@@ -1,0 +1,10 @@
+parameters:
+    symfony:
+        container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
+        console_application_loader: tests/console-application.php
+    doctrine:
+        repositoryClass: App\Repository\BaseRepository
+        objectManagerLoader: tests/object-manager.php
+    level: 5
+    paths:
+        - src
