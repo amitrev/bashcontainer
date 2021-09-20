@@ -49,6 +49,7 @@ RUN apk del $buildDeps \
     && rm -rf /tmp/* /var/cache/apk/*
 
 # Create workspace
+RUN apk add shadow && usermod -u 1000 www-data && groupmod -g 1000 www-data
 RUN mkdir -p /project
 COPY init.sh /project/init.sh
 RUN chmod a+x /project/init.sh
